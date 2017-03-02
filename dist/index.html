@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    <object class="bg" data="img/sunce.svg" type="image/svg+xml"></object>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script>
+            TweenMax.set('.bg', {x:'-50%',y:'-50%'});
+            function rotateBg(){
+                TweenMax.to('.bg', 30, {rotation:'+=60', ease: Power0.easeNone});
+                console.log('afddsfd')
+            }
+            setInterval(rotateBg, 30000);
+            rotateBg();
+
+        </script>
+    </body>
+</html>
